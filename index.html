@@ -14,7 +14,7 @@
   </form>
 <script> 
 function submitForm(){
-  global var csrf = document.querySelector('meta[name="csrfToken"]').content;
+  var csrf = document.querySelector('meta[name="csrfToken"]').content;
   document.hackerForm.submit(); 
  }
 </script> 
